@@ -17,7 +17,7 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://admin-sam:Samriddh123@cluster0.duxyz.mongodb.net/blogDB", { useNewUrlParser: true });
+mongoose.connect("mongodb://blogwebsite:KAzmd5EaVhdrHl8pBOPOXEUrzN91gPKjf5zMCESKIJL2WkEWAW5arNJLS79PUds96WQ4XITZnrUAG9hl87ZJ6Q==@blogwebsite.mongo.cosmos.azure.com:10255/?ssl=true&retrywrites=false&replicaSet=globaldb&maxIdleTimeMS=120000&appName=@blogwebsite@", { useNewUrlParser: true });
 
 const postSchema = {
   title: String,
